@@ -12,13 +12,22 @@ export class App extends Component {
     ]
   }
 
+  // Introducing an event handler 
+
+    changeNameHandler = (e) =>
+      this.setState ({
+        user : [
+          {username: e.target.value}
+        ]
+      })
+
     render() {
     return (
       <div>
         <div>
-          <Input />
+          <Input change = {this.changeNameHandler} name = {this.state.user[0].username} />
           {/* Using state with my output type */}
-          <Output name ={this.state.user[0].username} />
+          <Output name = {this.state.user[0].username} />
         </div>
       </div>
     )
