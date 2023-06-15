@@ -3,13 +3,22 @@ import Input from './Components/Input/Input'
 import Output from './Components/Output/Output'
 
 export class App extends Component {
+
+  // now creating a state
+
+  state = {
+    user : [
+      {username: "Hauwa"}
+    ]
+  }
+
     render() {
     return (
       <div>
         <div>
           <Input />
-          {/* Using props with my output type */}
-          <Output name ={"Adaobi"} />
+          {/* Using state with my output type */}
+          <Output name ={this.state.user[0].username} />
         </div>
       </div>
     )
