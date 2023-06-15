@@ -8,7 +8,8 @@ export class App extends Component {
       <div>
         <div>
           <Input />
-          <Output />
+          {/* Using props with my output type */}
+          <Output name ={"Adaobi"} />
         </div>
       </div>
     )

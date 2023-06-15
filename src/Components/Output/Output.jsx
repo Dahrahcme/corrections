@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Output() {
+function Output(props) {
   return (
     <div>
-      <p>I am Maduabuchi</p>
+      <p>I am {props.name}</p>
     </div>
   )
 }
