@@ -5,10 +5,13 @@ import Input from "./Components/FunctionalComponents/Input";
 import Output from "./Components/FunctionalComponents/Output";
 
 const App = () => {
+
+
+
   return (
     <div>
       <Input />
-      <Output />
+      <Output name={"Ayomide"} />
     </div>
   );
 }
