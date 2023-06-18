@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <div>
-      <Input nameChange={nameChangeHandler} />
+      <Input nameChange={nameChangeHandler} name={username} />
       <Output name={username} />
     </div>
   );
