@@ -1,17 +1,16 @@
 // Functional Based Components
 
-import React from "react";
+import React, {useState} from "react";
 import Input from "./Components/FunctionalComponents/Input";
 import Output from "./Components/FunctionalComponents/Output";
 
 const App = () => {
-
-
+  const [username, setUsername] = useState("Grace");
 
   return (
     <div>
       <Input />
-      <Output name={"Ayomide"} />
+      <Output name={username} />
     </div>
   );
 }
