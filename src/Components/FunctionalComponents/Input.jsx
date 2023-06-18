@@ -1,9 +1,9 @@
 import React from "react";
 
-const Input = () => {
+const Input = (props) => {
     return (
         <div>
-            <input type="text" />
+            <input type="text" onChange={props.nameChange} />
         </div>
     );
 }

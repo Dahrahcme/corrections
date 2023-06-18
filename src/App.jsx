@@ -7,9 +7,13 @@ import Output from "./Components/FunctionalComponents/Output";
 const App = () => {
   const [username, setUsername] = useState("Grace");
 
+  const nameChangeHandler = (e) => {
+    setUsername(e.target.value)
+  }
+
   return (
     <div>
-      <Input />
+      <Input nameChange={nameChangeHandler} />
       <Output name={username} />
     </div>
   );
